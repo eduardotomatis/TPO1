@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Inmobiliaria</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- <script src="https://kit.fontawesome.com/79e3887201.js" crossorigin="anonymous"></script>-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="js/formulario.js"></script>
+</head>
+
+<body class="body">
+    <header>
+        <h1 class="animate__heartBeat">Estilo Propiedades</h1><br><br>
+        <nav>
+            <a class="nav" href="index.html"> Home</a>
+            <a class="nav" href="quienes.html">  Quienes somos</a>
+            <a class="nav" href="alquiler.html">  Alquiler</a>
+            <a class="nav" href="venta.html">  Venta</a>
+            <a class="nav" href="proyectos.html">  Proyectos</a>
+            <a class="nav" href="contacto.html">  Contacto</a>
+        </nav>
+
+    </header>
+    <br>
+    <main class="main">
+        <form action="" class="formulario" onsubmit="return validar();">
+            <!--Nombre y Apellido-->
+            <div>
+                <label for="nombre" class="formulario_label">Nombre y Apellido:</label>
+                <input type="text" class="formulario_input" id="nombre" placeholder="Ingrese Nombre y Apellido">
+
+            </div>
+            <!--Correo electronico-->
+            <div>
+                <label for="correo" class="formulario_label">Correo electronico:</label>
+                <input type="text" class="formulario_input" id="correo" placeholder="ejemplo@ejemplo.com">
+
+            </div>
+            <!--Numero de telefono-->
+            <div>
+                <label for="telefono" class="formulario_label">Telefono:</label>
+                <input type="text" class="formulario_input" id="telefono" placeholder="02944123456">
+
+            </div>
+            <!--Codigo de Propiedad-->
+            <div>
+                <label for="codigo" class="formulario_label">Codigo de propiedad</label>
+                <input type="text" class="formulario_input" id="codigo" placeholder="ABC123">
+            </div>
+
+            <!--Consultas-->
+            <div>
+                <label for="consulta" class="formulario_label">Consulta</label>
+                <textarea name="consulta" id="consulta" cols="45" rows="6"></textarea>
+            </div>
+            <!--Boton enviar-->
+            <div>
+                <input type="submit" class="formulario_btn" onclick="return enviarFormulario()" value="Enviar"></button>
+
+            </div>
+        </form>
+    </main>
+    <menu>
+        <h3>Email</h3>
+        <p>Correo: <a href="mailto:estilo@propiedades.com.ar">Estilo Propiedades</a></p>
+    </menu>
+
+    <footer>
+        <a class="href" href="https://www.twitter.com" target="_blank"><i class="fa  fa-twitter fa-2x"  aria-hidden="true"></i></a>
+        <a class="href" href="https://www.facebook.com" target="_blank"><i class="fa  fa-facebook fa-2x" aria-hidden="true"></i></a>
+        <a class="href" href="https://www.instagram.com" target="_blank"><i class="fa  fa-instagram fa-2x" aria-hidden="true"></i></a>
+        <a class="href" href="https://www.linkedin.com" target="_blank"><i class="fa  fa-linkedin fa-2x" aria-hidden="true"></i></a>
+        <br>
+        <p style="text-align: center;">Derechos Reservados</p><br>
+    </footer>
+</body>
+
+</html>
